@@ -1,0 +1,32 @@
+//case 1:试除法
+#include <stdio.h>
+
+int main()
+{
+	
+	int count = 0;
+	int num = 0;
+	int num1 = 0;
+	int num2 = 0;
+	printf("请输入:>");
+	scanf("%d%d", &num1, &num2);
+	printf("素数有:");
+	for (num = num1; num <= num2; num++)
+	{
+		int a = 0;
+		for (a = 2; a < num; a++)
+		{
+			if (num % a == 0)
+			{
+				break;
+			}
+		}
+		if (a == num)
+		{
+			printf("%d ", num);
+			count++;
+		}
+	}
+	printf("\n一共%d个素数\n",count);
+	return 0;
+}

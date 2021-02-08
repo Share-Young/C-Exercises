@@ -1,4 +1,4 @@
-//case1 :
+//case 1:
 #include <stdio.h>
 
 int main()
@@ -28,7 +28,7 @@ int main()
 	return 0;
 }
 
-//case2 :
+//case 2:
 #include <stdio.h>
 
 int main()

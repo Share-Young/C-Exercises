@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+	
+	int year = 0;
+	int year1 = 0;
+	int year2 = 0;
+	int count = 0;
+	printf("请输入要计算的年份:");
+	scanf("%d%d", &year1, &year2);
+	printf("闰年有:");
+	for (year = year1; year <= year2; year++)
+	{
+		if (year % 4 == 0 && year % 100 != 0)
+		{
+			printf("%d ", year);
+			count++;
+		}
+		else if (year % 400 == 0)
+		{
+			printf("%d ", year);
+			count++;
+		}
+	}
+	printf("\n一共%d个闰年\n",count);
+	return 0;
+}

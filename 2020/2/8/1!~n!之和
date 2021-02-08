@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+	int a = 0;
+	int n = 0;
+	int sum1 = 1;
+	int sum2 = 0;
+	printf("请输入:>");
+	scanf("%d", &n);
+	for (a = 1; a <= n; a++)
+	{
+		sum1 = sum1*a;
+		sum2 = sum2 + sum1;
+	}
+	printf("%d\n", sum2);
+	return 0;
+}
